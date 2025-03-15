@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show Random Fun Fact
     function showFunFact() {
         const facts = [
-            "I started coding when I was 12!",
-            "I once built a website in just 3 hours!",
-            "I love debugging more than writing new code!"
+            "Family First: Whether I am lending an ear as a supportive brother or sharing wisdom as a caring father, I’m always there for relationship discussions and heartfelt advice.",
+            "Puzzle Enthusiast: I love getting lost in the challenge of puzzles—exploring intricate brain-teasers that spark my curiosity and sharpen my problem-solving skills.",
+            "Savvy Saver: I am money-driven in the best way—always hunting for clever ways to save and make smart financial choices, proving that a little frugality can lead to big rewards."
         ];
         const randomFact = facts[Math.floor(Math.random() * facts.length)];
         document.getElementById('about-description').innerText = randomFact;
