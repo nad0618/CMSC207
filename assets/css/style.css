@@ -1,6 +1,6 @@
 /* General Reset */
 * {
-  margin: 0;
+  margin: 0; /* Fixed incorrect margin */
   padding: 0;
   box-sizing: border-box;
 }
@@ -112,29 +112,31 @@ nav li {
   align-items: center;
   gap: 20px;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 #about .about-text {
   flex: 1;
   min-width: 250px;
+  
 }
 
+/* Image Styling */
 img {
-  width: 100%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 800px; /* Prevents oversized images */
   height: auto;
   border-radius: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-img:hover {
-  transform: scale(1.05);
-}
 
+/* Specific Profile Image Styling */
 #myImage {
-  width: 400px;
+  width: 100%;
+  max-width: 350px; /* Adjusted for better mobile compatibility */
   height: auto;
+  border-radius: 10px;
 }
 
 /* Buttons */
@@ -166,7 +168,7 @@ footer {
   margin-top: 20px;
 }
 
-/* Media Queries for Mobile Optimization */
+/* Mobile Optimizations */
 @media (max-width: 768px) {
   section {
     padding: 1em 2em;
@@ -175,6 +177,15 @@ footer {
   #about {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Resize images for mobile */
+  img {
+    max-width: 450px;
+  }
+
+  #myImage {
+    max-width: 300px;
   }
 }
 
@@ -191,6 +202,10 @@ footer {
   img {
     max-width: 100%;
   }
+
+  #myImage {
+    max-width: 250px;
+  }
 }
 
 /* Smooth Fade-in Animation */
@@ -204,3 +219,102 @@ footer {
     transform: translateY(0);
   }
 }
+#about, #hobbies,#contact-info {
+	padding:90px;
+}
+
+.myImage{
+	width:150px;
+	
+}
+
+
+h2{
+  font-size:50px !important;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin:50px 0 50px 0  ;
+}
+
+
+
+#about {
+  background: none; /* Removes any background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 190px 0; /* Adjust spacing */
+}
+
+.about-text {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px; /* Lowers the text */
+  text-align: left;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  gap: 50px; /* Space between image and text */
+}
+
+.about-container img {
+  border-radius: 50%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+
+
+.about-text h2 {
+
+  margin-bottom:90px;
+}
+
+/* Responsive adjustments for About Me section */
+@media (max-width: 768px) {
+  /* Make the about section stack vertically */
+  #about {
+    flex-direction: column;
+    padding: 20px;  /* Reduce padding for smaller screens */
+    text-align: center;
+  }
+  /* Ensure the container also stacks items */
+  .about-container {
+    flex-direction: column;
+    gap: 20px; /* Optional: Adjust gap if needed */
+  }
+  /* Center text within the about-text block */
+  .about-text {
+    text-align: center;
+    margin: 0 10px;
+  }
+  /* Adjust image size for mobile devices */
+  .about-container img {
+    max-width: 200px;
+  }
+}
+

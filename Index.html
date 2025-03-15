@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renald Cruz Personal Web Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav>
-      <div class="container">
-        <a class="navbar-brand" href="https://la1.recruz4.is215.upou.io/">
-          <span>CMSC 207 SS 2024-2025 - Web Programming and Development</span>
-        </a>
-        <span class="nav-toggle" onclick="handleClick('toggleMenu')">☰</span>
-        <ul>
-          <li>
-            <a href="#about">About Me</a>
-          </li>
-          <li>
-            <a href="#hobbies">Hobbies & Interests</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Info</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <section id="about">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <!-- Page description -->
-        <!-- Page content until the pagebreak -->
-        <div>
-          <table border="1" style="border-collapse: collapse; width: 100%; height: 400px; border-style: hidden;">
-            <tbody>
-              <tr style="height: 400px;">
-                <td style="width: 50.056%; height: 400px;">
-                  <p>
-                    <strong data-start="0" data-end="53">"Technology should make work easier, not harder."</strong> That’s the mindset I bring as a <strong data-start="86" data-end="150">Finance Systems Administrator</strong> at <strong data-start="86" data-end="150"> International School Manila</strong>, where I streamline processes and optimize NetSuite and in-house systems.
-                  </p>
-                  <p>Currently, I’m expanding my expertise through a <strong data-start="594" data-end="627">Master of Information Systems</strong> while also diving into <strong data-start="651" data-end="670">web development</strong>. I believe that <strong data-start="687" data-end="741">continuous learning isn’t optional—it’s essential.</strong>
-                  </p>
-                  <p style="text-align: right;">
-                    <em>- Renald Cruz</em>
-                  </p>
-                </td>
-                <td style="width: 49.944%; height: 400px; border-style: hidden;">
-                  <span style="background-color: #ffffff;">
-                    <img id="myImage" src="assets/img/nad.png" alt="My Image" style="display: block; margin-left: auto; margin-right: auto;">
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-    </section>
-    <section id="hobbies">
-      <h2>Hobbies & Interests</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renald Cruz Personal Web Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a class="navbar-brand" href="https://la1.recruz4.is215.upou.io/">
+        <span>CMSC 207 SS 2024-2025 - Web Programming and Development</span>
+      </a>
+      <span class="nav-toggle" onclick="showFunFact()">☰</span>
       <ul>
         <li>
-          <strong>Anime Enthusiast:</strong> Enjoys exploring diverse anime genres, drawing inspiration for creative projects and presentations.
+          <a href="#about">About Me</a>
         </li>
         <li>
-          <strong>E-Vehicle Fanatic:</strong> Passionate about the latest trends and innovations in electric vehicles and sustainable transportation.
+          <a href="#hobbies">Hobbies & Interests</a>
         </li>
         <li>
-          <strong>Lifelong Learner:</strong> Continuously seeks new knowledge and skills through education, online courses, and hands-on experiences.
+          <a href="#contact-info">Contact Info</a>
         </li>
       </ul>
-      <button onclick="handleClick('funFact')">Click for a Fun Fact!</button>
-      <p id="fun-fact"></p>
-    </section>
-    <footer>
-      <p>&copy; 2025 Renald Cruz. All Rights Reserved.</p>
-    </footer>
-    <script src="assets/js/script.js">
-      < /s> < /body> < /html>
+    </div>
+  </nav>
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <div id="about-description">
+          <p>
+            <strong>"Technology should make work easier, not harder."</strong> That’s
+            the mindset I bring as a <strong>Finance Systems Administrator</strong>
+            at <strong>International School Manila</strong>, where I streamline
+            processes and optimize NetSuite and in-house systems.
+          </p>
+          <p>Currently, I’m expanding my expertise through a 
+            <strong>Master of Information Systems</strong> while also diving into 
+            <strong>web development</strong>. I believe that 
+            <strong>continuous learning isn’t optional—it’s essential.</strong>
+          </p>
+        </div>
+       
+        <p style="text-align: right;"><em>- Renald Cruz</em></p>
+        <button onclick="showFunFact()">Click for a Fun Fact!</button>
+      </div>
+      <img id="myImage" src="assets/img/nad.png" alt="My Image">
+    </div>
+  </section>
+  
+  
+  <section id="hobbies" class="py-12 px-6">
+    <h2>Hobbies & Interests</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="assets/img/anime.png" alt="Anime">
+        <p><strong>Anime Enthusiast:</strong> Enjoys exploring diverse anime genres, drawing inspiration for creative projects and presentations.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/e-vehicle.png" alt="E-Vehicle">
+        <p><strong>E-Vehicle Fanatic:</strong> Passionate about the latest trends and innovations in electric vehicles and sustainable transportation.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/learning.png" alt="Learning">
+        <p><strong>Lifelong Learner:</strong> Continuously seeks new knowledge and skills through education, online courses, and hands-on experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-info" class="py-12 px-6">
+    <h2>Contact Info</h2>
+    <div class="card-grid">
+      <div class="card">
+        <p><strong>Email:</strong> your-email@example.com</p>
+        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/yourprofile</a></p>
+        <p><strong>GitHub:</strong> <a href="#">github.com/yourprofile</a></p>
+      </div>
+
+      <div class="card">
+        <p><strong>Location:</strong> Your City, Country</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+        <p><strong>Twitter:</strong> <a href="#">@yourhandle</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Renald Cruz. All Rights Reserved.</p>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

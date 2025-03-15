@@ -24,3 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 image.src = originalSrc;
             });
         });
+
+    // Show Random Fun Fact
+    function showFunFact() {
+        const facts = [
+            "I started coding when I was 12!",
+            "I once built a website in just 3 hours!",
+            "I love debugging more than writing new code!"
+        ];
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        document.getElementById('about-description').innerText = randomFact;
+    }
