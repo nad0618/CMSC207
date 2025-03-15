@@ -1,4 +1,4 @@
-# Project Title
+# CMSC 207 SS 2024-2025 - Web Programming and Development
 
 ## Table of Contents
 
