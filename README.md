@@ -1,5 +1,9 @@
 # CMSC 207 SS 2024-2025 - Web Programming and Development
+---
 
+<p align="center"><em>Please view live project here:</em> 👉 <a href="https://recruz4.netlify.app">https://recruz4.netlify.app</a></p>
+
+---
 ## Table of Contents
 
 - [About Me](#about)
@@ -18,38 +22,31 @@ I am Renald Cruz, a Finance Systems Administrator at International School Manila
 
 ## Hobbies & Interests <a name = "hobbies-interests"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
 <p align="center">
   <img src="https://recruz4.netlify.app/assets/img/hobbies.png" alt="Hobbies" width="100%">
 </p>
 
-### Prerequisites
+## Contact Info <a name = "contactinfo">
 
-What things you need to install the software and how to install them.
+<p align="center">
+  <img src="https://recruz4.netlify.app/assets/img/contact.png" alt="Contact" width="100%">
+</p>
 
-```
-Give examples
-```
+## Other View <a name ="view">
 
-### Installing
+<p align="center">
+  <img src="https://recruz4.netlify.app/assets/img/iphone.png" alt="Phone" width="100%">
+</p>
+<p align="center">
+  <img src="https://recruz4.netlify.app/assets/img/tablet.png" alt="Tablet" width="100%">
+</p>
 
-A step by step series of examples that tell you how to get a development env running.
+## Technologies Used <a name = "techno"></a>
 
-Say what the step will be
+This project was built using the following technologies:
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
+- HTML – Used for structuring the web page with semantic elements.
+- CSS – Applied for styling, layout, and responsive design.
+- JavaScript – Enables interactive elements such as button click events.
+- Netlify – Used for deploying and hosting the live website.
+- Git & GitHub – Version control and project repository management.
