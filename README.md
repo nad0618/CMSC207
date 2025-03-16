@@ -21,7 +21,7 @@ I am Renald Cruz, a Finance Systems Administrator at International School Manila
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 <p align="center">
-  <img src="https://recruz4.netlify.app/assets/img/hobbies.png" alt="About Me" width="100%">
+  <img src="https://recruz4.netlify.app/assets/img/hobbies.png" alt="Hobbies" width="100%">
 </p>
 
 ### Prerequisites
